@@ -58,6 +58,8 @@ Sixiang Chen, Jinbin Bai, Zhuoran Zhao, Tian Ye, Qingyu Shi, Donghao Zhou, Wenha
 [**Paper**](https://arxiv.org/abs/2504.05979)
 |
 [**Project**](https://github.com/Ephemeral182/Empirical-Study-of-GPT-4o-Image-Gen)
+|
+[**Code**](https://github.com/Ephemeral182/Empirical-Study-of-GPT-4o-Image-Gen)
 
 </div>
 </div>
