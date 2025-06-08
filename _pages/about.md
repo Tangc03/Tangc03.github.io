@@ -19,7 +19,7 @@ redirect_from:
 
 I am a third-year undergraduate student at [Yuanpei College](https://yuanpei.pku.edu.cn/en/), [Peking University (PKU)]([https://www.pku.edu.cn/](https://english.pku.edu.cn/)), and a junior in [Zhi Class](https://zhi-class.ai/), [School of Electronics Engineering and Computer Science (EECS)](https://eecs.pku.edu.cn/en/), [Peking University (PKU)]([https://www.pku.edu.cn/](https://english.pku.edu.cn/)).
 
-Currently, I am majoring in Artificial Intelligence. I am honored to be advised by [Prof. Yunhai Tong](https://scholar.google.com/citations?hl=zh-CN&user=T4gqdPkAAAAJ), [Dr. Xiangtai Li](https://lxtgh.github.io/) from Bytedance Seed (Tiktok), Singapore, and to collaborate with the great senior [Jianzong Wu](https://jianzongwu.github.io/).
+Currently, I am majoring in Artificial Intelligence. I am honored to be advised by [Prof. Yunhai Tong](https://scholar.google.com/citations?hl=zh-CN&user=T4gqdPkAAAAJ), [Dr. Xiangtai Li](https://lxtgh.github.io/) from Bytedance Seed (Tiktok), Singapore, and to collaborate with [Jianzong Wu](https://jianzongwu.github.io/).
 
 My research interests include multi-modal learning and visual generative methods for image, video, and artistic creations.
 <!-- I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
