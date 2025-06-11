@@ -43,7 +43,8 @@ Jianzong Wu, **Chao Tang**, Jingbo Wang, Yanhong Zeng, Xiangtai Li, Yunhai Tong
 |
 [**Code**](https://github.com/jianzongwu/DiffSensei)
 
-- DiffSensei can generate controllable black-and-white manga panels with flexible character adaptation.
+- MangaZero is a new large-scale manga dataset containing 43K manga pages and 427K annotated panels.
+- DiffSensei is the first model that can generate manga images with high-quality and controllable multiple characters with complex scenes.
 
 </div>
 </div>
