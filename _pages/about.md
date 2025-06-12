@@ -62,6 +62,8 @@ Sixiang Chen, Jinbin Bai, Zhuoran Zhao, Tian Ye, Qingyu Shi, Donghao Zhou, Wenha
 |
 [**Code**](https://github.com/Ephemeral182/Empirical-Study-of-GPT-4o-Image-Gen)
 
+- This study benchmarks GPT-4o's image generation against leading models, revealing key strengths and limitations in its multimodal capabilities.
+
 </div>
 </div>
 
