@@ -28,6 +28,8 @@ My research interests include multi-modal learning and visual generative methods
 # 🔥 News
  <!-- - *2025.07*: &nbsp;🎉🎉 [AADNet]() is accepted by SMC 2025! -->
  <!-- - *2025.04*: &nbsp;🎉🎉 [StyleCraft]() is accepted by ICIC 2025! -->
+ - *2025.07*: &nbsp;🎉🎉 [AADNet]() is accepted by SMC 2025!
+ - *2025.04*: &nbsp;🎉🎉 [StyleCraft]() is accepted by ICIC 2025!
  - *2025.02*: &nbsp;🎉🎉 [DiffSensei](https://jianzongwu.github.io/projects/diffsensei) is accepted by CVPR 2025!
 
 # 📝 Publications 
@@ -68,6 +70,29 @@ Sixiang Chen, Jinbin Bai, Zhuoran Zhao, Tian Ye, Qingyu Shi, Donghao Zhou, Wenha
 </div>
 </div>
 
+<!-- StyleCraft -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC2025 Oral</div><img src='images/papers/StyleCraft.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[StyleCraft: High-Quality Arbitrary Style Transfer via Unified Content-Style Fusion]()
+  
+**Chao Tang**, Xinhai Chang
+
+[**Paper(Coming Soon)**]()
+
+</div>
+</div>
+
+<!-- AADNet -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SMC 2025</div><img src='images/papers/AADNet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[AADNet: A Human-Mind-Inspired Multi-Modal Framework for Object Concept Learning]()
+  
+**Chao Tang**, Xinhai Chang
+
+[**Paper(Coming Soon)**]()
+
+</div>
+</div>
 
 <!-- StyleCraft -->
 <div style="display:none">
