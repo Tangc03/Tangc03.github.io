@@ -72,7 +72,7 @@ Sixiang Chen, Jinbin Bai, Zhuoran Zhao, Tian Ye, Qingyu Shi, Donghao Zhou, Wenha
 <div style="display:none">
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC2025 Oral</div><img src='images/papers/StyleCraft.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[StyleCraft: High-Quality Arbitrary Style Transfer via Unified Content-Style Fusion]()
+[StyleCraft: High-Quality Arbitrary Style Transfer via Unified Content-Style Fusion](https://doi.org/10.1007/978-981-96-9866-0_20)
   
 **Chao Tang**, Xinhai Chang
 
