@@ -116,7 +116,7 @@ Sixiang Chen, Jinbin Bai, Zhuoran Zhao, Tian Ye, Qingyu Shi, Donghao Zhou, Wenha
 <div class='paper-box-text' markdown="1">
 [AADNet: A Human-Mind-Inspired Multi-Modal Framework for Object Concept Learning]()
   
-**Chao Tang**, Xinhai Chang
+**Chao Tang***, Xinhai Chang*
 
 [**Paper(Coming Soon)**]()
 
