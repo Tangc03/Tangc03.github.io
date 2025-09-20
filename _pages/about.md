@@ -85,7 +85,7 @@ Sixiang Chen, Jinbin Bai, Zhuoran Zhao, Tian Ye, Qingyu Shi, Donghao Zhou, Wenha
 
 <!-- AADNet -->
 <div style="display:none">
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SMC 2025</div><img src='images/papers/AADNet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE SMC2025</div><img src='images/papers/AADNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [AADNet: A Human-Mind-Inspired Multi-Modal Framework for Object Concept Learning]()
   
