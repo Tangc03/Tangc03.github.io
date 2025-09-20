@@ -108,7 +108,7 @@ Sixiang Chen, Jinbin Bai, Zhuoran Zhao, Tian Ye, Qingyu Shi, Donghao Zhou, Wenha
 - *2022.09 - now*, Zhi Class, School of EECS, Peking University
 
 # 💁‍♂️ Services
-- Reviewer: DeLTa@ICLR'25, FM-Wild@ICLR'25, IJCNN'25, CogSci'25
+- Reviewer: DeLTa@ICLR'25, FM-Wild@ICLR'25, IJCNN'25, CogSci'25, PRCV2025
 <!-- - Reviewer: DeLTa@ICLR'2025, FM-Wild@ICLR'2025, IJCNN'2025, CogSci'2025, ACL-SRW(Student Research Workshop)'2025, ICONIP'2025, PRCV2025 -->
 
 # 🗺️ Visitors
