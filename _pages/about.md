@@ -37,7 +37,7 @@ My research interests include multi-modal learning and visual generative methods
 <div class='paper-box-text' markdown="1">
 [DiffSensei: Bridging Multi-Modal LLMs and Diffusion Models for Customized Manga Generation](https://arxiv.org/abs/2412.07589)
   
-Jianzong Wu, **Chao Tang**, Jingbo Wang, Yanhong Zeng, Xiangtai Li, Yunhai Tong
+[Jianzong Wu](https://jianzongwu.github.io/), [**Chao Tang**](https://tangc03.github.io/), [Jingbo Wang](https://wangjingbo1219.github.io/), [Yanhong Zeng](https://zengyh1900.github.io/), [Xiangtai Li](https://lxtgh.github.io/), [Yunhai Tong](https://scholar.google.com/citations?user=T4gqdPkAAAAJ&hl=zh-CN)
 
 [**Paper**](https://arxiv.org/abs/2412.07589)
 |
@@ -56,7 +56,7 @@ Jianzong Wu, **Chao Tang**, Jingbo Wang, Yanhong Zeng, Xiangtai Li, Yunhai Tong
 <div class='paper-box-text' markdown="1">
 [An Empirical Study of GPT-4o Image Generation Capabilities](https://arxiv.org/abs/2504.05979)
   
-Sixiang Chen, Jinbin Bai, Zhuoran Zhao, Tian Ye, Qingyu Shi, Donghao Zhou, Wenhao Chai, Xin Lin, Jianzong Wu, **Chao Tang**, Shilin Xu, Tao Zhang, Haobo Yuan, Yikang Zhou, Wei Chow, Linfeng Li, Xiangtai Li, Lei Zhu, Lu Qi
+[Sixiang Chen](https://ephemeral182.github.io/), [Jinbin Bai](https://noyii.github.io/), [Zhuoran Zhao](https://alicezrzhao.github.io/), [Tian Ye](https://owen718.github.io/), [Qingyu Shi](https://github.com/Shi-qingyu), [Donghao Zhou](https://correr-zhou.github.io/), [Wenhao Chai](https://wenhaochai.com/), [Xin Lin](https://linxin0.github.io/), [Jianzong Wu](https://jianzongwu.github.io/), [**Chao Tang**](https://tangc03.github.io/), [Shilin Xu](https://scholar.google.com/citations?user=8bBcL9sAAAAJ&hl=en), [Tao Zhang](https://zhang-tao-whu.github.io/), [Haobo Yuan](https://yuanhaobo.me/), [Yikang Zhou](https://zhouyiks.github.io/), [Wei Chow](https://scholar.google.com/citations?user=br7-IGkAAAAJ&hl=zh-CN), [Linfeng Li](https://scholar.google.com/citations?user=noWaiKgAAAAJ&hl=en), [Xiangtai Li](https://lxtgh.github.io/), [Lei Zhu](https://sites.google.com/site/indexlzhu/home?authuser=0), [Lu Qi](http://luqi.info/)
 
 [**Paper**](https://arxiv.org/abs/2504.05979)
 |
@@ -75,7 +75,7 @@ Sixiang Chen, Jinbin Bai, Zhuoran Zhao, Tian Ye, Qingyu Shi, Donghao Zhou, Wenha
 <div class='paper-box-text' markdown="1">
 [StyleCraft: High-Quality Arbitrary Style Transfer via Unified Content-Style Fusion](https://doi.org/10.1007/978-981-96-9866-0_20)
   
-**Chao Tang**, Xinhai Chang
+[**Chao Tang**](https://tangc03.github.io/), [Xinhai Chang](https://chang-xinhai.github.io/)
 
 [**Paper**](https://doi.org/10.1007/978-981-96-9866-0_20)
 
@@ -89,7 +89,7 @@ Sixiang Chen, Jinbin Bai, Zhuoran Zhao, Tian Ye, Qingyu Shi, Donghao Zhou, Wenha
 <div class='paper-box-text' markdown="1">
 [AADNet: A Human-Mind-Inspired Multi-Modal Framework for Object Concept Learning]()
   
-**Chao Tang***, Xinhai Chang*
+[**Chao Tang**](https://tangc03.github.io/)\*, [Xinhai Chang](https://chang-xinhai.github.io/)\*
 
 [**Paper(Coming Soon)**]()
 
