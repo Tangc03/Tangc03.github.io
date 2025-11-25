@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a third-year undergraduate student at [Yuanpei College](https://yuanpei.pku.edu.cn/en/), [Peking University (PKU)]([https://www.pku.edu.cn/](https://english.pku.edu.cn/)), and a junior in [Zhi Class](https://zhi-class.ai/), [School of Electronics Engineering and Computer Science (EECS)](https://eecs.pku.edu.cn/en/), [Peking University (PKU)]([https://www.pku.edu.cn/](https://english.pku.edu.cn/)).
+I am a final-year undergraduate student at [Yuanpei College](https://yuanpei.pku.edu.cn/en/), [Peking University (PKU)]([https://www.pku.edu.cn/](https://english.pku.edu.cn/)), and a senior in [Zhi Class](https://zhi-class.ai/), [School of Electronics Engineering and Computer Science (EECS)](https://eecs.pku.edu.cn/en/), [Peking University (PKU)]([https://www.pku.edu.cn/](https://english.pku.edu.cn/)).
 
 Currently, I am majoring in Artificial Intelligence. I am honored to be advised by [Prof. Yunhai Tong](https://scholar.google.com/citations?hl=zh-CN&user=T4gqdPkAAAAJ), [Dr. Xiangtai Li](https://lxtgh.github.io/) from Bytedance Seed (Tiktok), Singapore, and to collaborate with [Jianzong Wu](https://jianzongwu.github.io/).
 
@@ -26,7 +26,7 @@ My research interests include multi-modal learning and visual generative methods
 
 
 # 🔥 News
- <!-- - *2025.08*: &nbsp; I have started my internship in Alibaba(Taotian). -->
+ - *2025.08*: &nbsp; I have started my internship in Alibaba(Taotian).
  <!-- - *2025.07*: &nbsp;🎉🎉 [AADNet(coming soon)]() is accepted by IEEE SMC 2025! -->
  <!-- - *2025.04*: &nbsp;🎉🎉 [StyleCraft](https://doi.org/10.1007/978-981-96-9866-0_20) is accepted by ICIC 2025! -->
  - *2025.02*: &nbsp;🎉🎉 [DiffSensei](https://jianzongwu.github.io/projects/diffsensei) is accepted by CVPR 2025!
