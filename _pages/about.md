@@ -27,7 +27,7 @@ My research interests include multi-modal learning and visual generative methods
 
 # 🔥 News
  <!-- - *2025.08*: &nbsp; I have started my internship in Alibaba(Taotian). -->
- <!-- - *2025.07*: &nbsp;🎉🎉 [AADNet(coming soon)]() is accepted by IEEE SMC 2025! -->
+ <!-- - *2025.07*: &nbsp;🎉🎉 [AADNet(coming soon)](https://ieeexplore.ieee.org/document/11343434) is accepted by IEEE SMC 2025! -->
  <!-- - *2025.04*: &nbsp;🎉🎉 [StyleCraft](https://doi.org/10.1007/978-981-96-9866-0_20) is accepted by ICIC 2025! -->
  - *2025.02*: &nbsp;🎉🎉 [DiffSensei](https://jianzongwu.github.io/projects/diffsensei) is accepted by CVPR 2025!
 
@@ -91,7 +91,7 @@ My research interests include multi-modal learning and visual generative methods
   
 [**Chao Tang**](https://tangc03.github.io/)\*, [Xinhai Chang](https://chang-xinhai.github.io/)\*
 
-[**Paper(Coming Soon)**]()
+[**Paper(Coming Soon)**](https://ieeexplore.ieee.org/document/11343434)
 
 </div>
 </div>
