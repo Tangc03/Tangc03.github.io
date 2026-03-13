@@ -331,9 +331,43 @@
     </div>
   </section>
 
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="images/teaser.png" alt="Teaser overview" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Demonstration of the UniCharacter model's capabilities. The model utilizes a character's profile to maintain consistency across several integrated tasks. The core innovation is showcased in Multimodal Role Play, where the model simultaneously generates a coherent textual response and a corresponding visual image that reflects the character's emotion. This unified generation is supplemented by the model's ability to perform Text-to-Image (T2I) Generation, Knowledge Question-Answering (Knowledge QA), and Visual Question-Answering (VQA). Together, these functions highlight UniCharacter's ability to create a cohesive, interactive, and visually embodied persona within a single framework.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="images/data_overview.png" alt="Data overview" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          An overview of RoleScape-20. RoleScape-20 contains 9 human characters, 4 animal characters, and 7 anime characters.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="images/data_pipeline.png" alt="Data pipeline" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Overview of the data construction pipeline. The data construction pipeline processes raw character materials (dialogues, images, profiles) into diverse training data, including multimodal role-play dialogues, Knowledge QA, and VQA pairs.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="images/model_pipeline.png" alt="Model pipeline" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Overview of the UniCharacter framework. Stage 1 focuses on Unified-SFT, using MSE loss for image outputs and CE loss for text outputs. Stage 2 implements Character-GRPO, optimizing the policy \(\pi_{\theta}\) via a multi-reward mechanism that considers both text-image alignment and generation diversity. 
+       </h2>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
 
 <!-- Teaser carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div class="teaser-carousel">
@@ -346,7 +380,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser carousel -->
 
 <!-- Paper abstract -->
@@ -396,41 +430,6 @@
   </div>
 </section>
 <!-- End youtube video -->
-
-<!-- Image carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <img src="images/teaser.png" alt="Teaser overview" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Demonstration of the UniCharacter model's capabilities. The model utilizes a character's profile to maintain consistency across several integrated tasks. The core innovation is showcased in Multimodal Role Play, where the model simultaneously generates a coherent textual response and a corresponding visual image that reflects the character's emotion. This unified generation is supplemented by the model's ability to perform Text-to-Image (T2I) Generation, Knowledge Question-Answering (Knowledge QA), and Visual Question-Answering (VQA). Together, these functions highlight UniCharacter's ability to create a cohesive, interactive, and visually embodied persona within a single framework.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="images/data_overview.png" alt="Data overview" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          An overview of RoleScape-20. RoleScape-20 contains 9 human characters, 4 animal characters, and 7 anime characters.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="images/data_pipeline.png" alt="Data pipeline" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Overview of the data construction pipeline. The data construction pipeline processes raw character materials (dialogues, images, profiles) into diverse training data, including multimodal role-play dialogues, Knowledge QA, and VQA pairs.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="images/model_pipeline.png" alt="Model pipeline" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Overview of the UniCharacter framework. Stage 1 focuses on Unified-SFT, using MSE loss for image outputs and CE loss for text outputs. Stage 2 implements Character-GRPO, optimizing the policy \(\pi_{\theta}\) via a multi-reward mechanism that considers both text-image alignment and generation diversity. 
-       </h2>
-     </div>
-  </div>
-</div>
-</div>
-</section> -->
-<!-- End image carousel -->
 
 <!-- Data Overview -->
 <section class="section hero is-light">
