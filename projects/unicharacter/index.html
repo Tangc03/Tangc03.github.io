@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="KEYWORD1">
+  <meta property="article:tag" content="KEYWORD2">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="PAPER_TITLE">
+  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
+  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>Towards Customized Multimodal Role-Play - Chao Tang et al. | Academic Research</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/myicon.ico">
+  <link rel="apple-touch-icon" href="static/images/myicon.ico">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+
+  <!-- MathJax for LaTeX-style math rendering -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)'], ['$', '$']]
+      }
+    };
+  </script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "PAPER_TITLE",
+    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- More Works Dropdown -->
+  <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works">
+      <i class="fas fa-flask"></i>
+      More Works
+      <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>View More Works</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="works-list">
+        <a href="https://jianzongwu.github.io/projects/diffsensei/" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>DiffSensei: Bridging Multi-Modal LLMs and Diffusion Models for Customized Manga Generation</h5>
+            <p>An innovative framework for generating manga with dynamic multi-character control, integrating diffusion-based image generation with multimodal large language models.</p>
+            <span class="work-venue">CVPR 2025</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://github.com/Ephemeral182/Empirical-Study-of-GPT-4o-Image-Gen" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>An Empirical Study of GPT-4o Image Generation Capabilities</h5>
+            <p>The first comprehensive empirical benchmark of GPT-4o's image generation performance across more than 20 distinct tasks.</p>
+            <span class="work-venue">arXiv 2025</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-2 publication-title">Towards Customized Multimodal Role-Play</h1>
+            <div class="is-size-6 publication-authors">
+              <!-- TODO: Replace with your paper authors and their personal links -->
+              <span class="author-block">
+                <a href="https://tangc03.github.io/" target="_blank">Chao Tang</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href="https://jianzongwu.github.io/" target="_blank">Jianzong Wu</a><sup>1,2</sup>,</span>
+              <!-- <span class="author-block">
+                <a href="https://lxtgh.github.io/" target="_blank">Xiangtai Li</a><sup>3</sup>,</span> -->
+              <span class="author-block">
+                <a href="https://github.com/Shi-qingyu" target="_blank">Qingyu Shi</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://tyfeld.github.io/" target="_blank">Ye Tian</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com.hk/citations?user=hNTP47EAAAAJ&hl=en" target="_blank">Aixi Zhang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=0TvdOEcAAAAJ&hl=en" target="_blank">Hao Jiang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=2hA4X9wAAAAJ&hl=en" target="_blank">Jiangning Zhang</a><sup>3</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=T4gqdPkAAAAJ" target="_blank">Yunhai Tong</a><sup>1</sup></span>
+            </div>
+
+            <div class="is-size-6 publication-authors">
+              <!-- TODO: Replace with your institution and conference/journal info -->
+              <span class="author-block"><sup>1</sup>PKU,</span>
+              <span class="author-block"><sup>2</sup>Alibaba Group,</span>
+              <span class="author-block"><sup>3</sup>ZJU</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- TODO: Replace with your GitHub repository URL -->
+                <span class="link-block">
+                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+
+              <!-- TODO: Update with your arXiv paper ID -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+            </span>
+
+            <!-- Dataset -->
+            <!-- <span class="link-block">
+              <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>Dataset</span>
+            </a>
+          </span> -->
+
+            <!-- Supplementary -->
+            <span class="link-block">
+              <a href="index-supplement.html" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-file-alt"></i>
+              </span>
+              <span>Supplementary</span>
+            </a>
+          </span>
+
+          <!-- Models -->
+          <span class="link-block">
+            <a href="https://your-models-link-here" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="fas fa-cubes"></i>
+            </span>
+            <span>Models</span>
+          </a>
+        </span>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Teaser carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="teaser-carousel">
+        <div class="item">
+          <img src="images/teaser.png" alt="Teaser overview" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">
+            Demonstration of the UniCharacter model's capabilities. The model utilizes a character's profile to maintain consistency across several integrated tasks. The core innovation is showcased in Multi-modal Role Play, where the model simultaneously generates a coherent textual response and a corresponding visual image that reflects the character's emotion. This unified generation is supplemented by the model's ability to perform Knowledge QA, and Visual QA (VQA). Together, these functions highlight UniCharacter's ability to create a cohesive, interactive, and visually embodied persona within a single framework.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End teaser carousel -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            Unified multimodal understanding and generation models enable richer human-AI interaction. 
+            Yet jointly customizing a character's persona, dialogue style, and visual identity while maintaining output consistency across modalities remains largely unexplored. 
+            To mitigate this gap, we introduce a new task, Customized Multimodal Role-Play (CMRP). 
+            We construct the RoleScape-20 dataset comprising 20 characters, including training and evaluation data that cover persona, stylistic descriptions, visual/expressive cues, and text–image interactions. 
+            Building on a unified model, we devise UniCharacter, a two-stage training framework containing unified supervised finetuning (Unified-SFT) and character-specific group relative policy optimization (Character-GRPO). 
+            Given only 10 images plus corresponding interaction examples, the model acquires the target character and exhibits coherent persona, style, and visual identity in both generated text and images. This process takes about 100 GPU hours. 
+            Experiments on the RoleScape-20 dataset show that the proposed method substantially outperforms prior approaches. 
+            Ablation studies further validate the effectiveness of our cross-modal consistency design and few-shot customization strategy. 
+            We argue that CMRP, coupled with unified modeling, provides a basis for next-generation characterful and immersive interactive agents. 
+            All code and models will be publicly available.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- TODO: Replace with your YouTube video ID -->
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="images/teaser.png" alt="Teaser overview" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Demonstration of the UniCharacter model's capabilities. The model utilizes a character's profile to maintain consistency across several integrated tasks. The core innovation is showcased in Multimodal Role Play, where the model simultaneously generates a coherent textual response and a corresponding visual image that reflects the character's emotion. This unified generation is supplemented by the model's ability to perform Text-to-Image (T2I) Generation, Knowledge Question-Answering (Knowledge QA), and Visual Question-Answering (VQA). Together, these functions highlight UniCharacter's ability to create a cohesive, interactive, and visually embodied persona within a single framework.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="images/data_overview.png" alt="Data overview" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          An overview of RoleScape-20. RoleScape-20 contains 9 human characters, 4 animal characters, and 7 anime characters.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="images/data_pipeline.png" alt="Data pipeline" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Overview of the data construction pipeline. The data construction pipeline processes raw character materials (dialogues, images, profiles) into diverse training data, including multimodal role-play dialogues, Knowledge QA, and VQA pairs.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="images/model_pipeline.png" alt="Model pipeline" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Overview of the UniCharacter framework. Stage 1 focuses on Unified-SFT, using MSE loss for image outputs and CE loss for text outputs. Stage 2 implements Character-GRPO, optimizing the policy \(\pi_{\theta}\) via a multi-reward mechanism that considers both text-image alignment and generation diversity. 
+       </h2>
+     </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+<!-- Data Overview -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Data Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            RoleScape-20 contains 9 human characters, 4 animal characters, and 7 anime characters.
+          </p>
+        </div>
+        <div class="content" style="margin-top: 2rem;">
+          <img src="images/data_overview.png" alt="Data overview" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); box-shadow: var(--shadow-md);">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Data Overview -->
+
+<!-- Data Construction -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Data Construction</h2>
+        <div class="content has-text-justified">
+          <p>
+            The data construction pipeline processes raw character materials (dialogues, images, profiles) into diverse training data, including multimodal role-play dialogues, Knowledge QA, and VQA pairs.
+          </p>
+        </div>
+        <div class="content" style="margin-top: 2rem;">
+          <img src="images/data_pipeline.png" alt="Data pipeline" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); box-shadow: var(--shadow-md);">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Data Construction -->
+
+<!-- Model Architecture -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Model Architecture</h2>
+        <div class="content has-text-justified">
+          <p>
+            Stage 1 focuses on Unified-SFT, using MSE loss for image outputs and CE loss for text outputs. Stage 2 implements Character-GRPO, optimizing the policy \(\pi_{\theta}\) via a multi-reward mechanism that considers both text-image alignment and generation diversity.
+          </p>
+        </div>
+        <div class="content" style="margin-top: 2rem;">
+          <img src="images/model_pipeline.png" alt="Model pipeline" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); box-shadow: var(--shadow-md);">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Model Architecture -->
+
+<!-- Gallery -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Gallery</h2>
+      <div class="content has-text-justified" style="margin-bottom: 2rem;">
+        <p>
+          Below are some qualitative results. For more results, please refer to the supplementary material in 
+          <a href="index-supplement.html" target="_blank"
+          class="external-link button is-small is-rounded is-dark" style="display: inline-block; vertical-align: middle; margin: 0 0.25rem;">
+          <span class="icon">
+            <i class="fas fa-images"></i>
+          </span>
+          <span>More Qualitative Results</span>
+        </a>.
+        </p>
+      </div>
+      <div class="results-carousel">
+        <div class="item">
+          <img src="images/qualitative_results.png" alt="Qualitative results" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Gallery -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@article{Tang2025CustomizedRolePlay,
+  title={Towards Customized Multimodal Role-Play},
+  author={Chao Tang and Jianzong Wu and Qingyu Shi and Ye Tian and Aixi Zhang and Hao Jiang and Jiangning Zhang and Yunhai Tong},
+  <!-- journal={CVPR},
+  year={2025},
+  url={https://your-domain.com/your-project-page} -->
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+</main>
+
+  </body>
+  </html>
