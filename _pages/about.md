@@ -98,6 +98,7 @@ My research interests include multi-modal learning and visual generative methods
 </div>
 
 # 🎖 Honors and Awards
+- *2025* Zhi Class Scholarship 
 - *2024* Zhi Class Scholarship 
 - *2022* Peking University Freshman Scholarship 
 - *2022* Outstanding Graduate Award of Shenzhen Middle School
@@ -108,7 +109,7 @@ My research interests include multi-modal learning and visual generative methods
 - *2022.09 - now*, Zhi Class, School of EECS, Peking University
 
 # 💁‍♂️ Services
-- Reviewer: DeLTa@ICLR'25, FM-Wild@ICLR'25, IJCNN'25, CogSci'25, PRCV2025
+- Reviewer: DeLTa@ICLR'26, DeLTa@ICLR'25, FM-Wild@ICLR'25, IJCNN'25, CogSci'25, PRCV2025
 <!-- - Reviewer: DeLTa@ICLR'2025, FM-Wild@ICLR'2025, IJCNN'2025, CogSci'2025, ACL-SRW(Student Research Workshop)'2025, ICONIP'2025, PRCV2025 -->
 
 # 🗺️ Visitors
