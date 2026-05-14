@@ -22,13 +22,12 @@ I am a final-year undergraduate student at [Yuanpei College](https://yuanpei.pku
 Currently, I am majoring in Artificial Intelligence. I am honored to be advised by [Prof. Yunhai Tong](https://scholar.google.com/citations?hl=zh-CN&user=T4gqdPkAAAAJ), [Dr. Xiangtai Li](https://lxtgh.github.io/) from Bytedance Seed (Tiktok), Singapore, and to collaborate with [Jianzong Wu](https://jianzongwu.github.io/).
 
 My research interests include multi-modal learning and visual generative methods for image, video, and artistic creations.
-<!-- I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 
 # 🔥 News
- - *2025.08*: &nbsp; I have started my internship in Alibaba(Taotian).
+ <!-- - *2025.08*: &nbsp; I have started my internship in Alibaba(Taotian).
  - *2025.07*: &nbsp;🎉🎉 [AADNet](https://ieeexplore.ieee.org/document/11343434) is accepted by IEEE SMC 2025!
- - *2025.04*: &nbsp;🎉🎉 [StyleCraft](https://doi.org/10.1007/978-981-96-9866-0_20) is accepted by ICIC 2025!
+ - *2025.04*: &nbsp;🎉🎉 [StyleCraft](https://doi.org/10.1007/978-981-96-9866-0_20) is accepted by ICIC 2025! -->
  - *2025.02*: &nbsp;🎉🎉 [DiffSensei](https://jianzongwu.github.io/projects/diffsensei) is accepted by CVPR 2025!
 
 # 📝 Publications 
@@ -94,7 +93,7 @@ My research interests include multi-modal learning and visual generative methods
 </div>
 
 <!-- AADNet -->
-<!-- <div style="display:none"> -->
+<div style="display:none">
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE SMC2025</div><img src='images/papers/AADNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [AADNet: A Human-Mind-Inspired Multi-Modal Framework for Object Concept Learning](https://ieeexplore.ieee.org/document/11343434)
@@ -105,10 +104,10 @@ My research interests include multi-modal learning and visual generative methods
 
 </div>
 </div>
-<!-- </div> -->
+</div>
 
 <!-- StyleCraft -->
-<!-- <div style="display:none"> -->
+<div style="display:none">
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC2025 Oral</div><img src='images/papers/StyleCraft.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [StyleCraft: High-Quality Arbitrary Style Transfer via Unified Content-Style Fusion](https://doi.org/10.1007/978-981-96-9866-0_20)
@@ -119,7 +118,7 @@ My research interests include multi-modal learning and visual generative methods
 
 </div>
 </div>
-<!-- </div> -->
+</div>
 
 # 🎖 Honors and Awards
 - *2025* Zhi Class Scholarship 
