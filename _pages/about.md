@@ -27,11 +27,35 @@ My research interests include multi-modal learning and visual generative methods
 
 # 🔥 News
  <!-- - *2025.08*: &nbsp; I have started my internship in Alibaba(Taotian). -->
- <!-- - *2025.07*: &nbsp;🎉🎉 [AADNet(coming soon)](https://ieeexplore.ieee.org/document/11343434) is accepted by IEEE SMC 2025! -->
+ <!-- - *2025.07*: &nbsp;🎉🎉 [AADNet](https://ieeexplore.ieee.org/document/11343434) is accepted by IEEE SMC 2025! -->
  <!-- - *2025.04*: &nbsp;🎉🎉 [StyleCraft](https://doi.org/10.1007/978-981-96-9866-0_20) is accepted by ICIC 2025! -->
  - *2025.02*: &nbsp;🎉🎉 [DiffSensei](https://jianzongwu.github.io/projects/diffsensei) is accepted by CVPR 2025!
 
 # 📝 Publications 
+<!-- UniCharacter -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/papers/UniCharacter.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Towards Customized Multimodal Role-Play](https://arxiv.org/abs/2605.08129)
+  
+[**Chao Tang**](https://tangc03.github.io/), [Jianzong Wu](https://jianzongwu.github.io/), [Qingyu Shi](https://github.com/Shi-qingyu), [Ye Tian](https://tyfeld.github.io/), Aixi Zhang, Hao Jiang, Jiangning Zhang, [Yunhai Tong](https://scholar.google.com/citations?user=T4gqdPkAAAAJ&hl=zh-CN)
+
+[**Paper**]([https://arxiv.org/abs/2412.07589](https://arxiv.org/abs/2605.08129))
+|
+[**Project**](https://jianzongwu.github.io/projects/diffsensei)
+|
+[**Code**](https://github.com/Tangc03/UniCharacter)
+|
+[**Dataset**](https://huggingface.co/datasets/Tangc03/RoleScape20)
+|
+[**Models**](https://huggingface.co/Tangc03/UniCharacter)
+
+- CMRP customizes a character's persona, dialogue style, and visual identity in multimodal interactions, while maintaining cross-modal consistency.
+- RoleScape-20 covers 20 characters, containing persona dialogue, character visual representation, text-to-image interaction, and both visual and knowledge QA for training and evaluation.
+- UniCharacter is a two-stage training framework containing Unified-SFT and Character-GRPO, which enhances cross-modal consistency and few-shot customization.
+
+</div>
+</div>
+
 <!-- DiffSensei -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR2025</div><img src='images/papers/DiffSensei.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -87,7 +111,7 @@ My research interests include multi-modal learning and visual generative methods
 <div style="display:none">
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE SMC2025</div><img src='images/papers/AADNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[AADNet: A Human-Mind-Inspired Multi-Modal Framework for Object Concept Learning]()
+[AADNet: A Human-Mind-Inspired Multi-Modal Framework for Object Concept Learning](https://ieeexplore.ieee.org/document/11343434)
   
 [**Chao Tang**](https://tangc03.github.io/)\*, [Xinhai Chang](https://chang-xinhai.github.io/)\*
 
