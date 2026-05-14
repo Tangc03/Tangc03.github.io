@@ -26,9 +26,9 @@ My research interests include multi-modal learning and visual generative methods
 
 
 # 🔥 News
- <!-- - *2025.08*: &nbsp; I have started my internship in Alibaba(Taotian). -->
- <!-- - *2025.07*: &nbsp;🎉🎉 [AADNet](https://ieeexplore.ieee.org/document/11343434) is accepted by IEEE SMC 2025! -->
- <!-- - *2025.04*: &nbsp;🎉🎉 [StyleCraft](https://doi.org/10.1007/978-981-96-9866-0_20) is accepted by ICIC 2025! -->
+ - *2025.08*: &nbsp; I have started my internship in Alibaba(Taotian).
+ - *2025.07*: &nbsp;🎉🎉 [AADNet](https://ieeexplore.ieee.org/document/11343434) is accepted by IEEE SMC 2025!
+ - *2025.04*: &nbsp;🎉🎉 [StyleCraft](https://doi.org/10.1007/978-981-96-9866-0_20) is accepted by ICIC 2025!
  - *2025.02*: &nbsp;🎉🎉 [DiffSensei](https://jianzongwu.github.io/projects/diffsensei) is accepted by CVPR 2025!
 
 # 📝 Publications 
@@ -76,7 +76,7 @@ My research interests include multi-modal learning and visual generative methods
 </div>
 
 <!-- GPT4o Report -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv Report</div><img src='images/papers/GPT4o_Report.jpeg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/papers/GPT4o_Report.jpeg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [An Empirical Study of GPT-4o Image Generation Capabilities](https://arxiv.org/abs/2504.05979)
   
@@ -94,7 +94,7 @@ My research interests include multi-modal learning and visual generative methods
 </div>
 
 <!-- StyleCraft -->
-<div style="display:none">
+<!-- <div style="display:none"> -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC2025 Oral</div><img src='images/papers/StyleCraft.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [StyleCraft: High-Quality Arbitrary Style Transfer via Unified Content-Style Fusion](https://doi.org/10.1007/978-981-96-9866-0_20)
@@ -105,10 +105,10 @@ My research interests include multi-modal learning and visual generative methods
 
 </div>
 </div>
-</div>
+<!-- </div> -->
 
 <!-- AADNet -->
-<div style="display:none">
+<!-- <div style="display:none"> -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE SMC2025</div><img src='images/papers/AADNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [AADNet: A Human-Mind-Inspired Multi-Modal Framework for Object Concept Learning](https://ieeexplore.ieee.org/document/11343434)
@@ -119,7 +119,7 @@ My research interests include multi-modal learning and visual generative methods
 
 </div>
 </div>
-</div>
+<!-- </div> -->
 
 # 🎖 Honors and Awards
 - *2025* Zhi Class Scholarship 
