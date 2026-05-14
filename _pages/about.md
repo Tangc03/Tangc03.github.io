@@ -93,6 +93,20 @@ My research interests include multi-modal learning and visual generative methods
 </div>
 </div>
 
+<!-- AADNet -->
+<!-- <div style="display:none"> -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE SMC2025</div><img src='images/papers/AADNet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[AADNet: A Human-Mind-Inspired Multi-Modal Framework for Object Concept Learning](https://ieeexplore.ieee.org/document/11343434)
+  
+[**Chao Tang**](https://tangc03.github.io/)\*, [Xinhai Chang](https://chang-xinhai.github.io/)\*
+
+[**Paper**](https://ieeexplore.ieee.org/document/11343434)
+
+</div>
+</div>
+<!-- </div> -->
+
 <!-- StyleCraft -->
 <!-- <div style="display:none"> -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC2025 Oral</div><img src='images/papers/StyleCraft.png' alt="sym" width="100%"></div></div>
@@ -102,20 +116,6 @@ My research interests include multi-modal learning and visual generative methods
 [**Chao Tang**](https://tangc03.github.io/), [Xinhai Chang](https://chang-xinhai.github.io/)
 
 [**Paper**](https://doi.org/10.1007/978-981-96-9866-0_20)
-
-</div>
-</div>
-<!-- </div> -->
-
-<!-- AADNet -->
-<!-- <div style="display:none"> -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE SMC2025</div><img src='images/papers/AADNet.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[AADNet: A Human-Mind-Inspired Multi-Modal Framework for Object Concept Learning](https://ieeexplore.ieee.org/document/11343434)
-  
-[**Chao Tang**](https://tangc03.github.io/)\*, [Xinhai Chang](https://chang-xinhai.github.io/)\*
-
-[**Paper(Coming Soon)**](https://ieeexplore.ieee.org/document/11343434)
 
 </div>
 </div>
