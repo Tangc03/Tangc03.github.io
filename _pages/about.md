@@ -40,7 +40,7 @@ My research interests include multi-modal learning and visual generative methods
 
 [**Paper**]([https://arxiv.org/abs/2412.07589](https://arxiv.org/abs/2605.08129))
 |
-[**Project**](https://jianzongwu.github.io/projects/diffsensei)
+[**Project**](https://tangc03.github.io/UniCharacter.github.io/)
 |
 [**Code**](https://github.com/Tangc03/UniCharacter)
 |
