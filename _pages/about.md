@@ -17,20 +17,20 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a final-year undergraduate student at [Yuanpei College](https://yuanpei.pku.edu.cn/en/), [Peking University (PKU)]([https://www.pku.edu.cn/](https://english.pku.edu.cn/)), and a senior in [Zhi Class](https://zhi-class.ai/), [School of Electronics Engineering and Computer Science (EECS)](https://eecs.pku.edu.cn/en/), [Peking University (PKU)]([https://www.pku.edu.cn/](https://english.pku.edu.cn/)).
+I am a final-year undergraduate student at [Yuanpei College](https://yuanpei.pku.edu.cn/en/), [Peking University (PKU)](https://english.pku.edu.cn/), and a senior in [Zhi Class](https://zhi-class.ai/), [School of Electronics Engineering and Computer Science (EECS)](https://eecs.pku.edu.cn/en/), [Peking University (PKU)](https://english.pku.edu.cn/).
 
-Currently, I am majoring in Artificial Intelligence. I am honored to be advised by [Prof. Yunhai Tong](https://scholar.google.com/citations?hl=zh-CN&user=T4gqdPkAAAAJ), [Dr. Xiangtai Li](https://lxtgh.github.io/) from Bytedance Seed (Tiktok), Singapore, and to collaborate with [Jianzong Wu](https://jianzongwu.github.io/).
+Currently, I am majoring in Intelligence Science and Technology. I am honored to be advised by [Prof. Yunhai Tong](https://scholar.google.com/citations?hl=zh-CN&user=T4gqdPkAAAAJ), [Dr. Xiangtai Li](https://lxtgh.github.io/) from Bytedance Seed (Tiktok), Singapore, and to collaborate with [Jianzong Wu](https://jianzongwu.github.io/).
 
 My research interests include multi-modal learning and visual generative methods for image, video, and artistic creations.
 
 
-# 🔥 News
+# News
  <!-- - *2025.08*: &nbsp; I have started my internship in Alibaba(Taotian). -->
- <!-- - *2025.07*: &nbsp;🎉🎉 [AADNet](https://ieeexplore.ieee.org/document/11343434) is accepted by IEEE SMC 2025! -->
- <!-- - *2025.04*: &nbsp;🎉🎉 [StyleCraft](https://doi.org/10.1007/978-981-96-9866-0_20) is accepted by ICIC 2025! -->
- - *2025.02*: &nbsp;🎉🎉 [DiffSensei](https://jianzongwu.github.io/projects/diffsensei) is accepted by CVPR 2025!
+ <!-- - *2025.07*: &nbsp; [AADNet](https://ieeexplore.ieee.org/document/11343434) is accepted by IEEE SMC 2025! -->
+ <!-- - *2025.04*: &nbsp; [StyleCraft](https://doi.org/10.1007/978-981-96-9866-0_20) is accepted by ICIC 2025! -->
+ - *2025.02*: &nbsp; [DiffSensei](https://jianzongwu.github.io/projects/diffsensei) is accepted by CVPR 2025!
 
-# 📝 Publications 
+# Publications 
 <!-- UniCharacter -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/papers/UniCharacter.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -120,22 +120,50 @@ My research interests include multi-modal learning and visual generative methods
 </div>
 </div>
 
-# 🎖 Honors and Awards
+# Honors and Awards
 - *2025* Zhi Class Scholarship 
 - *2024* Zhi Class Scholarship 
 - *2022* Peking University Freshman Scholarship 
 - *2022* Outstanding Graduate Award of Shenzhen Middle School
 - *2020, 2021* First Prize in Chinese Physics Olympiad (CPhO), Guangdong Province
 
-# 📖 Educations
-- *2022.09 - now*, Yuanpei College, Peking University
-- *2022.09 - now*, Zhi Class, School of EECS, Peking University
+# Experiences
+<div class="experience-list">
+  <article class="experience-card">
+    <a class="experience-media" href="https://www.pku.edu.cn/" target="_blank" rel="noopener" aria-label="Peking University">
+      <img src="images/experience/pku.webp" alt="Peking University logo" decoding="async">
+    </a>
+    <div class="experience-body">
+      <h3 class="experience-title"><strong><a href="https://www.pku.edu.cn/" target="_blank" rel="noopener">Peking University</a></strong>, China</h3>
+      <p class="experience-meta">Sep 2022 - Present</p>
+      <p class="experience-role">Undergraduate Student, Intelligence Science and Technology</p>
+    </div>
+  </article>
 
-# 💁‍♂️ Services
+  <article class="experience-card">
+    <a class="experience-media" href="https://zhi-class.ai/" target="_blank" rel="noopener" aria-label="Zhi Class">
+      <img src="images/experience/zhi-class.png" alt="Zhi Class logo" decoding="async">
+    </a>
+    <div class="experience-body">
+      <h3 class="experience-title"><strong><a href="https://zhi-class.ai/" target="_blank" rel="noopener">Zhi Class</a></strong>, School of EECS, Peking University, China</h3>
+      <p class="experience-meta">Sep 2022 - Present</p>
+      <p class="experience-role">Undergraduate Student, Intelligence Science and Technology</p>
+    </div>
+  </article>
+
+  <article class="experience-card">
+    <a class="experience-media" href="https://msalab-pku.github.io/" target="_blank" rel="noopener" aria-label="MSA Lab">
+      <img src="images/experience/msa-lab.png" alt="MSA Lab logo" decoding="async">
+    </a>
+    <div class="experience-body">
+      <h3 class="experience-title"><strong><a href="https://msalab-pku.github.io/" target="_blank" rel="noopener">MSA Lab</a></strong>, Peking University, China</h3>
+      <p class="experience-meta">Sep 2024 - Present</p>
+      <p class="experience-role">Student Researcher</p>
+      <p class="experience-detail">Mentors: Prof. <a href="https://scholar.google.com/citations?user=T4gqdPkAAAAJ&hl=zh-CN">Yunhai Tong</a>, Dr. <a href="https://lxtgh.github.io/">Xiangtai Li</a></p>
+    </div>
+  </article>
+</div>
+
+# Services
 - Reviewer: DeLTa@ICLR'26, DeLTa@ICLR'25, FM-Wild@ICLR'25, IJCNN'25, CogSci'25, PRCV2025
 <!-- - Reviewer: DeLTa@ICLR'2025, FM-Wild@ICLR'2025, IJCNN'2025, CogSci'2025, ACL-SRW(Student Research Workshop)'2025, ICONIP'2025, PRCV2025 -->
-
-# 🗺️ Visitors
-<div style="width: 200px;"> <!-- 可以根据需要调整宽度，比如150px、300px等 -->
-    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=uPei8bWb9abBe6c8TNkGmGbiSjNsaoSwdTYiiNWSgx4&cl=ffffff&w=a"></script>
-</div>

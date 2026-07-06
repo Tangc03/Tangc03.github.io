@@ -9,22 +9,26 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body class="academic-home">
 
     {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    {% include site-nav.html %}
 
-    <div id="main" role="main">
-      {% include sidebar.html %}
-    
-      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-        <div class="page__inner-wrap">
+    <div class="wrapper">
+      {% if page.author_profile or layout.author_profile %}
+        <header class="site-profile" role="banner">
+          {% include author-profile.html %}
+        </header>
+      {% endif %}
+
+      <main class="site-content" role="main">
+        <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+          {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
           <section class="page__content" itemprop="text">
             {{ content }}
           </section>
-        </div>
-      </article>
+        </article>
+      </main>
     </div>
 
     {% include scripts.html %}
