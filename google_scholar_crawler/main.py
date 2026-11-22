@@ -7,7 +7,12 @@ author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
 scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
 name = author['name']
 author['updated'] = str(datetime.now())
-author['publications'] = {v['author_pub_id']:v for v in author['publications']}
+pubs = {}
+for v in author['publications']:
+    if not v.get('title'):
+        v['title'] = (v.get('bib') or {}).get('title')
+    pubs[v['author_pub_id']] = v
+author['publications'] = pubs
 print(json.dumps(author, indent=2))
 os.makedirs('results', exist_ok=True)
 with open(f'results/gs_data.json', 'w') as outfile:
