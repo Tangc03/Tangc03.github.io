@@ -1,0 +1,43 @@
+name: Update Google Scholar stats
+
+on:
+  schedule:
+    # Mondays and Thursdays at 02:17 UTC
+    - cron: '17 2 * * 1,4'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r google_scholar_crawler/requirements.txt
+
+      - name: Crawl Google Scholar stats
+        env:
+          GOOGLE_SCHOLAR_ID: KpVFMqYAAAAJ
+        run: python google_scholar_crawler/main.py
+
+      - name: Publish to google-scholar-stats branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin google-scholar-stats --depth 1 2>/dev/null || true
+          B1=$(git hash-object -w results/gs_data.json)
+          B2=$(git hash-object -w results/gs_data_shieldsio.json)
+          TR=$(printf '100644 blob %s\tgs_data.json\n100644 blob %s\tgs_data_shieldsio.json\n' "$B1" "$B2" | git mktree)
+          PARENT=""
+          if git cat-file -e refs/remotes/origin/google-scholar-stats^{commit} 2>/dev/null; then
+            PARENT="-p refs/remotes/origin/google-scholar-stats"
+          fi
+          CM=$(git commit-tree "$TR" $PARENT -m "Update Google Scholar stats")
+          git push origin "$CM:refs/heads/google-scholar-stats" --force
