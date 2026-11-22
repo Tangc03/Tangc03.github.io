@@ -57,9 +57,9 @@
         if (!row || row.querySelector('.citation-badge')) return;
         const link = document.createElement('a');
         link.className = 'badge-link citation-badge';
-        link.href = 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user='
-          + encodeURIComponent(hit.key.split(':')[0])
-          + '&citation_for_view=' + encodeURIComponent(hit.key);
+        link.href = 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=en&user='
+          + hit.key.split(':')[0]
+          + '&citation_for_view=' + hit.key;
         link.target = '_blank';
         link.rel = 'noopener';
         const img = document.createElement('img');
