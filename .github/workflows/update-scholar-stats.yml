@@ -23,6 +23,7 @@ jobs:
         run: pip install -r google_scholar_crawler/requirements.txt
 
       - name: Crawl Google Scholar stats
+        timeout-minutes: 8
         env:
           GOOGLE_SCHOLAR_ID: KpVFMqYAAAAJ
         run: python google_scholar_crawler/main.py
