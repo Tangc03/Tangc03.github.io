@@ -3,13 +3,13 @@ layout: compress
 ---
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="{{ page.lang | default: 'en' }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
 
-  <body class="academic-home">
+  <body class="academic-home" id="top">
 
     {% include browser-upgrade.html %}
     {% include site-nav.html %}

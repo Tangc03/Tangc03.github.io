@@ -1,19 +1,180 @@
 <script>
-    $(document).ready(function () {
-        {% if site.google_scholar_stats_use_cdn %}
-        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
-        {% else %}
-        var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
-        {% endif %}
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
-            var totalCitation = data['citedby']
-            document.getElementById('total_cit').innerHTML = totalCitation;
-            var citationEles = document.getElementsByClassName('show_paper_citations')
-            Array.prototype.forEach.call(citationEles, element => {
-                var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
-            });
+  (function () {
+    const statsBaseUrl = {% if site.google_scholar_stats_use_cdn %}'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'{% else %}'https://raw.githubusercontent.com/{{ site.repository }}/'{% endif %};
+    const statsUrl = statsBaseUrl + 'google-scholar-stats/gs_data.json';
+    const maxStatsAgeDays = 30;
+
+    function setText(selector, value) {
+      document.querySelectorAll(selector).forEach((node) => {
+        node.textContent = value;
+      });
+    }
+
+    function parseScholarDate(value) {
+      if (!value) return null;
+      const date = new Date(String(value).replace(' ', 'T'));
+      return Number.isNaN(date.getTime()) ? null : date;
+    }
+
+    function formatDate(value) {
+      const date = parseScholarDate(value);
+      if (!date) return 'when available';
+      return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+    }
+
+    function isFresh(value) {
+      const date = parseScholarDate(value);
+      if (!date) return false;
+      const ageMs = Date.now() - date.getTime();
+      return ageMs >= 0 && ageMs <= maxStatsAgeDays * 24 * 60 * 60 * 1000;
+    }
+
+    function markStatsStale(message) {
+      document.querySelectorAll('[data-scholar-stats]').forEach((node) => {
+        node.classList.add('is-stale');
+        node.hidden = false;
+      });
+      document.querySelectorAll('[data-scholar-badge]').forEach((node) => { node.hidden = false; });
+      setText('[data-scholar-citations]', '--');
+      setText('[data-scholar-hindex]', '--');
+      setText('[data-scholar-updated]', message || 'auto-sync pending');
+    }
+
+    // Per-paper Google Scholar citation badges, shown only past this threshold.
+    const MIN_CITATIONS_FOR_BADGE = 10;
+
+    function injectCitationBadges(publications) {
+      const norm = (s) => String(s || '').toLowerCase().replace(/\s+/g, ' ').trim();
+      const byTitle = {};
+      Object.keys(publications || {}).forEach((key) => {
+        const pub = publications[key];
+        if (pub && pub.title) byTitle[norm(pub.title)] = { key, count: Number(pub.num_citations) || 0 };
+      });
+      document.querySelectorAll('.publication-item[data-title]').forEach((item) => {
+        const hit = byTitle[norm(item.getAttribute('data-title'))];
+        if (!hit || hit.count < MIN_CITATIONS_FOR_BADGE) return;
+        const row = item.querySelector('.publication-links');
+        if (!row || row.querySelector('.citation-badge')) return;
+        const link = document.createElement('a');
+        link.className = 'badge-link citation-badge';
+        link.href = 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user='
+          + encodeURIComponent(hit.key.split(':')[0])
+          + '&citation_for_view=' + encodeURIComponent(hit.key);
+        link.target = '_blank';
+        link.rel = 'noopener';
+        const img = document.createElement('img');
+        img.src = 'https://img.shields.io/badge/Citations-' + hit.count + '-9cf?logo=google-scholar&style=flat&labelColor=f6f6f6';
+        img.alt = hit.count + ' citations on Google Scholar';
+        link.appendChild(img);
+        row.appendChild(link);
+      });
+    }
+
+    async function loadScholarStats() {
+      try {
+        const response = await fetch(statsUrl, { cache: 'no-store' });
+        if (!response.ok) throw new Error('Unable to fetch Google Scholar stats');
+        const data = await response.json();
+        if (!isFresh(data.updated)) {
+          markStatsStale(`stale since ${formatDate(data.updated)}`);
+          return;
+        }
+        document.querySelectorAll('[data-scholar-stats]').forEach((node) => {
+          node.classList.remove('is-stale');
+          node.hidden = false;
         });
-    })
+        document.querySelectorAll('[data-scholar-badge]').forEach((node) => { node.hidden = false; });
+        setText('[data-scholar-citations]', Number(data.citedby || 0).toLocaleString());
+        setText('[data-scholar-hindex]', Number(data.hindex || 0).toLocaleString());
+        setText('[data-scholar-updated]', formatDate(data.updated));
+        injectCitationBadges(data.publications);
+      } catch (error) {
+        // Stats feed not published yet (crawler branch missing): keep the card hidden.
+        console.warn('Google Scholar stats unavailable:', error);
+      }
+    }
+
+    function initPublicationFilters() {
+      const controls = document.querySelector('[data-publication-controls]');
+      const list = document.getElementById('publication-list');
+      if (!controls || !list) return;
+
+      const viewButtons = Array.from(controls.querySelectorAll('[data-publication-view]'));
+      const topicButtons = Array.from(controls.querySelectorAll('[data-topic-filter]'));
+      const items = Array.from(list.querySelectorAll('.publication-item'));
+      const count = controls.querySelector('[data-publication-count]');
+      const empty = list.querySelector('.publication-empty');
+      let view = 'selected';
+      let topic = 'all';
+
+      function applyView() {
+        let visibleCount = 0;
+        items.forEach((item) => {
+          const scopeMatch = view === 'full' || item.getAttribute('data-selected') === 'true';
+          const topicMatch = topic === 'all' || (item.getAttribute('data-topic') || '').split(' ').indexOf(topic) !== -1;
+          item.hidden = !(scopeMatch && topicMatch);
+          if (!item.hidden) visibleCount += 1;
+        });
+        viewButtons.forEach((button) => {
+          button.setAttribute('aria-pressed', String(button.getAttribute('data-publication-view') === view));
+        });
+        topicButtons.forEach((button) => {
+          const isActive = button.getAttribute('data-topic-filter') === topic;
+          button.classList.toggle('is-active', isActive);
+          button.setAttribute('aria-pressed', String(isActive));
+        });
+        list.setAttribute('data-view', view);
+        if (count) {
+          const zh = document.documentElement.lang === 'zh';
+          count.textContent = zh
+            ? visibleCount + (view === 'selected' ? ' 篇精选论文' : ' 篇论文')
+            : visibleCount + (view === 'selected' ? ' selected papers' : ' papers');
+        }
+        if (empty) empty.hidden = visibleCount !== 0;
+      }
+
+      viewButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const next = button.getAttribute('data-publication-view');
+          if (next !== view) {
+            view = next;
+            applyView();
+          }
+        });
+      });
+
+      topicButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          topic = button.getAttribute('data-topic-filter') || 'all';
+          applyView();
+        });
+      });
+
+      applyView();
+      controls.hidden = false;
+    }
+
+    function initStarsBadges() {
+      document.querySelectorAll('[data-stars-repo]').forEach((el) => {
+        const repo = el.getAttribute('data-stars-repo');
+        if (!repo) return;
+        fetch(`https://img.shields.io/github/stars/${repo}.json`)
+          .then((res) => (res.ok ? res.json() : Promise.reject(new Error('bad response'))))
+          .then((data) => {
+            const n = parseInt(String(data.message).replace(/[^\d]/g, ''), 10);
+            if (!Number.isFinite(n)) return;
+            const label = n.toLocaleString();
+            el.innerHTML = `<span class="star" aria-hidden="true">★</span> ${label}`;
+            el.setAttribute('aria-label', `${label} GitHub stars`);
+          })
+          .catch(() => { /* keep the plain "Stars" pill on failure */ });
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initPublicationFilters();
+      initStarsBadges();
+      loadScholarStats();
+    });
+  })();
 </script>

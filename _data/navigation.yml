@@ -1,19 +1,23 @@
-# main links links
+# Top navigation anchors (rendered by _includes/site-nav.html)
 main:
-  - title: "About Me"
-    url: "/#about-me"
-
+  - title: "About"
+    title_zh: "关于"
+    url: "#about-me"
   - title: "News"
-    url: "/#-news"
-
+    title_zh: "新闻"
+    url: "#news"
   - title: "Publications"
-    url: "/#-publications"
-
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
-
-  - title: "Educations"
-    url: "/#-educations"
-
+    title_zh: "论文"
+    url: "#publications"
+  - title: "Awards"
+    title_zh: "奖项"
+    url: "#honors-and-awards"
+  - title: "Experiences"
+    title_zh: "经历"
+    url: "#experiences"
   - title: "Services"
-    url: "/#-services"
+    title_zh: "服务"
+    url: "#services"
+  - title: "Visitors"
+    title_zh: "访客"
+    url: "#visitors"

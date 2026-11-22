@@ -1,0 +1,113 @@
+# Publication data rendered by _includes/publication-list.html
+# categories: multimodal | generation (a paper may carry several topic tags)
+# selected: false entries appear only in the Full List view.
+# Order in this file = display order on the homepage.
+
+- id: unicharacter
+  type: preprint
+  categories: [multimodal, generation]
+  selected: true
+  contribution: first
+  title: "Towards Customized Multimodal Role-Play"
+  venue: "arXiv Preprint"
+  year: 2026
+  badge: "In Submission"
+  image: "images/papers/UniCharacter.png"
+  intro: "A two-stage framework (Unified-SFT + Character-GRPO) for customized multimodal role-play with cross-modal consistency, with the RoleScape-20 benchmark of 20 characters."
+  intro_zh: "面向定制化多模态角色扮演的两阶段框架（Unified-SFT + Character-GRPO），保持跨模态一致性，并附 20 个角色的 RoleScape-20 基准。"
+  authors_html: >-
+    <a href="https://tangc03.github.io/"><strong>Chao Tang</strong></a>, <a href="https://jianzongwu.github.io/">Jianzong Wu</a>, <a href="https://github.com/Shi-qingyu">Qingyu Shi</a>, <a href="https://tyfeld.github.io/">Ye Tian</a>, Aixi Zhang, Hao Jiang, Jiangning Zhang, <a href="https://scholar.google.com/citations?user=T4gqdPkAAAAJ&hl=zh-CN">Yunhai Tong</a>
+  links:
+    - label: Paper
+      url: "https://arxiv.org/abs/2605.08129"
+    - label: Project
+      url: "https://tangc03.github.io/UniCharacter.github.io/"
+    - label: Code
+      url: "https://github.com/Tangc03/UniCharacter"
+    - label: Dataset
+      url: "https://huggingface.co/datasets/Tangc03/RoleScape20"
+    - label: Models
+      url: "https://huggingface.co/Tangc03/UniCharacter"
+
+- id: diffsensei
+  type: publication
+  categories: [multimodal, generation]
+  selected: true
+  contribution: core
+  title: "DiffSensei: Bridging Multi-Modal LLMs and Diffusion Models for Customized Manga Generation"
+  venue: "CVPR 2025"
+  year: 2025
+  badge: "CVPR 2025"
+  image: "images/papers/DiffSensei.png"
+  intro: "The first customized manga generation model bridging multi-modal LLMs and diffusion models, with MangaZero (43K pages, 427K annotated panels)."
+  intro_zh: "首个融合多模态大模型与扩散模型的定制化漫画生成模型，附 MangaZero 数据集（43K 页、427K 标注面板）。"
+  authors_html: >-
+    <a href="https://jianzongwu.github.io/">Jianzong Wu</a>, <a href="https://tangc03.github.io/"><strong>Chao Tang</strong></a>, <a href="https://wangjingbo1219.github.io/">Jingbo Wang</a>, <a href="https://zengyh1900.github.io/">Yanhong Zeng</a>, <a href="https://lxtgh.github.io/">Xiangtai Li</a>, <a href="https://scholar.google.com/citations?user=T4gqdPkAAAAJ&hl=zh-CN">Yunhai Tong</a>
+  links:
+    - label: Paper
+      url: "https://arxiv.org/abs/2412.07589"
+    - label: Project
+      url: "https://jianzongwu.github.io/projects/diffsensei"
+    - label: Code
+      url: "https://github.com/jianzongwu/DiffSensei"
+    - label: Dataset
+      url: "https://huggingface.co/datasets/jianzongwu/MangaZero"
+  stars_repo: "jianzongwu/DiffSensei"
+
+- id: gpt4o-report
+  type: preprint
+  categories: [generation]
+  selected: true
+  contribution: collaborator
+  title: "An Empirical Study of GPT-4o Image Generation Capabilities"
+  venue: "arXiv Preprint"
+  year: 2025
+  badge: "arXiv"
+  image: "images/papers/GPT4o_Report.jpeg"
+  intro: "A systematic benchmark of GPT-4o image generation against leading models, revealing its strengths and limitations."
+  intro_zh: "对 GPT-4o 图像生成能力的系统评测，对比主流模型并揭示其优势与局限。"
+  authors_html: >-
+    <a href="https://ephemeral182.github.io/">Sixiang Chen</a>, <a href="https://noyii.github.io/">Jinbin Bai</a>, <a href="https://alicezrzhao.github.io/">Zhuoran Zhao</a>, <a href="https://owen718.github.io/">Tian Ye</a>, <a href="https://github.com/Shi-qingyu">Qingyu Shi</a>, <a href="https://correr-zhou.github.io/">Donghao Zhou</a>, <a href="https://wenhaochai.com/">Wenhao Chai</a>, <a href="https://linxin0.github.io/">Xin Lin</a>, <a href="https://jianzongwu.github.io/">Jianzong Wu</a>, <a href="https://tangc03.github.io/"><strong>Chao Tang</strong></a>, <a href="https://scholar.google.com/citations?user=8bBcL9sAAAAJ&hl=en">Shilin Xu</a>, <a href="https://zhang-tao-whu.github.io/">Tao Zhang</a>, <a href="https://yuanhaobo.me/">Haobo Yuan</a>, <a href="https://zhouyiks.github.io/">Yikang Zhou</a>, <a href="https://scholar.google.com/citations?user=br7-IGkAAAAJ&hl=zh-CN">Wei Chow</a>, <a href="https://scholar.google.com/citations?user=noWaiKgAAAAJ&hl=en">Linfeng Li</a>, <a href="https://lxtgh.github.io/">Xiangtai Li</a>, <a href="https://sites.google.com/site/indexlzhu/home?authuser=0">Lei Zhu</a>, <a href="http://luqi.info/">Lu Qi</a>
+  links:
+    - label: Paper
+      url: "https://arxiv.org/abs/2504.05979"
+    - label: Project
+      url: "https://github.com/Ephemeral182/Empirical-Study-of-GPT-4o-Image-Gen"
+    - label: Code
+      url: "https://github.com/Ephemeral182/Empirical-Study-of-GPT-4o-Image-Gen"
+
+- id: stylecraft
+  type: publication
+  categories: [generation]
+  selected: false
+  contribution: first
+  title: "StyleCraft: High-Quality Arbitrary Style Transfer via Unified Content-Style Fusion"
+  venue: "ICIC 2025 (Oral)"
+  year: 2025
+  badge: "ICIC 2025 Oral"
+  image: "images/papers/StyleCraft.png"
+  intro: "High-quality arbitrary style transfer via unified content-style fusion."
+  intro_zh: "基于统一内容-风格融合的高质量任意风格迁移。"
+  authors_html: >-
+    <a href="https://tangc03.github.io/"><strong>Chao Tang</strong></a>, <a href="https://chang-xinhai.github.io/">Xinhai Chang</a>
+  links:
+    - label: Paper
+      url: "https://doi.org/10.1007/978-981-96-9866-0_20"
+
+- id: aadnet
+  type: publication
+  categories: [multimodal]
+  selected: false
+  contribution: co-first
+  title: "AADNet: A Human-Mind-Inspired Multi-Modal Framework for Object Concept Learning"
+  venue: "IEEE SMC 2025 (Oral)"
+  year: 2025
+  badge: "IEEE SMC 2025 Oral"
+  image: "images/papers/AADNet.png"
+  intro: "A human-mind-inspired multi-modal framework for object concept learning."
+  intro_zh: "受人类心智启发的多模态物体概念学习框架。"
+  authors_html: >-
+    <a href="https://tangc03.github.io/"><strong>Chao Tang</strong></a>*, <a href="https://chang-xinhai.github.io/">Xinhai Chang</a>*
+  links:
+    - label: Paper
+      url: "https://ieeexplore.ieee.org/document/11343434"

@@ -3,157 +3,83 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+## About Me
 
-<span class='anchor' id='about-me'></span>
+I am a first-year Ph.D. student at the [School of Intelligence Science and Technology](https://sist.pku.edu.cn/), [Peking University (PKU)](https://english.pku.edu.cn/). I received my B.S. degree in Intelligence Science and Technology in 2026 from [Yuanpei College](https://yuanpei.pku.edu.cn/en/), PKU, where I was also a member of [Zhi Class](https://zhi-class.ai/), [School of Electronics Engineering and Computer Science (EECS)](https://eecs.pku.edu.cn/en/).
 
-I am a final-year undergraduate student at [Yuanpei College](https://yuanpei.pku.edu.cn/en/), [Peking University (PKU)](https://english.pku.edu.cn/), and a senior in [Zhi Class](https://zhi-class.ai/), [School of Electronics Engineering and Computer Science (EECS)](https://eecs.pku.edu.cn/en/), [Peking University (PKU)](https://english.pku.edu.cn/).
+I am honored to be advised by [Prof. Yunhai Tong](https://scholar.google.com/citations?hl=zh-CN&user=T4gqdPkAAAAJ) and [Dr. Xiangtai Li](https://lxtgh.github.io/) from Bytedance (Tiktok), Singapore, and to collaborate with [Dr. Jianzong Wu](https://jianzongwu.github.io/). Feel free to reach out via <a href="mailto:tc_2003@stu.pku.edu.cn" class="mail-button"><i class="fas fa-envelope"></i> tc_2003@stu.pku.edu.cn</a> — I am always open to research discussions and collaboration. My Google Scholar: <a class="scholar-badge" data-scholar-badge hidden href="https://scholar.google.com/citations?user=KpVFMqYAAAAJ" target="_blank" rel="noopener"><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&amp;url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FTangc03%2FTangc03.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&amp;labelColor=f6f6f6&amp;color=9cf&amp;style=flat&amp;label=citations" alt="Google Scholar citations badge"></a>
 
-Currently, I am majoring in Intelligence Science and Technology. I am honored to be advised by [Prof. Yunhai Tong](https://scholar.google.com/citations?hl=zh-CN&user=T4gqdPkAAAAJ), [Dr. Xiangtai Li](https://lxtgh.github.io/) from Bytedance Seed (Tiktok), Singapore, and to collaborate with [Jianzong Wu](https://jianzongwu.github.io/).
+## Research Interests
 
-My research interests include multi-modal learning and visual generative methods for image, video, and artistic creations.
+My research aims at **making AIGC better with various methods**: post-training and applications of diffusion/flow-based visual generation, customized visual generation, unified multimodal models, and multimodal learning. The next step is **agentic pipelines** for modern visual generation systems — especially code-driven image/video generation and code-driven world models.
 
+## News
 
-# News
- <!-- - *2025.08*: &nbsp; I have started my internship in Alibaba(Taotian). -->
- <!-- - *2025.07*: &nbsp; [AADNet](https://ieeexplore.ieee.org/document/11343434) is accepted by IEEE SMC 2025! -->
- <!-- - *2025.04*: &nbsp; [StyleCraft](https://doi.org/10.1007/978-981-96-9866-0_20) is accepted by ICIC 2025! -->
- - *2025.02*: &nbsp; [DiffSensei](https://jianzongwu.github.io/projects/diffsensei) is accepted by CVPR 2025!
+<!-- - <span class="date-mono">[Jul. 2025]</span> [AADNet](https://ieeexplore.ieee.org/document/11343434) is accepted by IEEE SMC 2025! -->
+<!-- - <span class="date-mono">[Apr. 2025]</span> [StyleCraft](https://doi.org/10.1007/978-981-96-9866-0_20) is accepted by ICIC 2025! -->
+- <span class="date-mono">[Sep. 2026]</span> 🎉 I have started my Ph.D. at the [School of Intelligence Science and Technology](https://sist.pku.edu.cn/), [Peking University](https://english.pku.edu.cn/)!
+- <span class="date-mono">[Jul. 2026]</span> 🎓 I received my B.S. degree in Intelligence Science and Technology from [Yuanpei College](https://yuanpei.pku.edu.cn/en/), [Peking University](https://english.pku.edu.cn/)!
+- <span class="date-mono">[Sep. 2025]</span> 💼 I joined Taobao and Tmall Group, Alibaba Inc. as a Research Intern!
+- <span class="date-mono">[Feb. 2025]</span> 🎉 [DiffSensei](https://jianzongwu.github.io/projects/diffsensei) is accepted by **CVPR 2025**!
 
-# Publications 
-<!-- UniCharacter -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/papers/UniCharacter.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Towards Customized Multimodal Role-Play](https://arxiv.org/abs/2605.08129)
-  
-[**Chao Tang**](https://tangc03.github.io/), [Jianzong Wu](https://jianzongwu.github.io/), [Qingyu Shi](https://github.com/Shi-qingyu), [Ye Tian](https://tyfeld.github.io/), Aixi Zhang, Hao Jiang, Jiangning Zhang, [Yunhai Tong](https://scholar.google.com/citations?user=T4gqdPkAAAAJ&hl=zh-CN)
+## Publications
 
-[**Paper**]([https://arxiv.org/abs/2412.07589](https://arxiv.org/abs/2605.08129))
-|
-[**Project**](https://tangc03.github.io/UniCharacter.github.io/)
-|
-[**Code**](https://github.com/Tangc03/UniCharacter)
-|
-[**Dataset**](https://huggingface.co/datasets/Tangc03/RoleScape20)
-|
-[**Models**](https://huggingface.co/Tangc03/UniCharacter)
+<p class="section-note">Use <strong>Select List</strong> for representative works, or switch to <strong>Full List</strong> for the complete publication record.</p>
 
-- CMRP customizes a character's persona, dialogue style, and visual identity in multimodal interactions, while maintaining cross-modal consistency.
-- RoleScape-20 covers 20 characters, containing persona dialogue, character visual representation, text-to-image interaction, and both visual and knowledge QA for training and evaluation.
-- UniCharacter is a two-stage training framework containing Unified-SFT and Character-GRPO, which enhances cross-modal consistency and few-shot customization.
+{% include publication-list.html %}
 
-</div>
-</div>
+## Honors and Awards
 
-<!-- DiffSensei -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR2025</div><img src='images/papers/DiffSensei.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[DiffSensei: Bridging Multi-Modal LLMs and Diffusion Models for Customized Manga Generation](https://arxiv.org/abs/2412.07589)
-  
-[Jianzong Wu](https://jianzongwu.github.io/), [**Chao Tang**](https://tangc03.github.io/), [Jingbo Wang](https://wangjingbo1219.github.io/), [Yanhong Zeng](https://zengyh1900.github.io/), [Xiangtai Li](https://lxtgh.github.io/), [Yunhai Tong](https://scholar.google.com/citations?user=T4gqdPkAAAAJ&hl=zh-CN)
+- <span class="date-mono">[2024, 2025]</span> Zhi Class Scholarship
+- <span class="date-mono">[2022]</span> Peking University Freshman Scholarship
+- <span class="date-mono">[2022]</span> Outstanding Graduate Award of Shenzhen Middle School
+- <span class="date-mono">[2020, 2021]</span> **First Prize** in Chinese Physics Olympiad (CPhO), Guangdong Province
 
-[**Paper**](https://arxiv.org/abs/2412.07589)
-|
-[**Project**](https://jianzongwu.github.io/projects/diffsensei)
-|
-[**Code**](https://github.com/jianzongwu/DiffSensei)
+## Experiences
 
-- MangaZero is a new large-scale manga dataset containing 43K manga pages and 427K annotated panels.
-- DiffSensei is the first model that can generate manga images with high-quality and controllable multiple characters with complex scenes.
-
-</div>
-</div>
-
-<!-- GPT4o Report -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/papers/GPT4o_Report.jpeg' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[An Empirical Study of GPT-4o Image Generation Capabilities](https://arxiv.org/abs/2504.05979)
-  
-[Sixiang Chen](https://ephemeral182.github.io/), [Jinbin Bai](https://noyii.github.io/), [Zhuoran Zhao](https://alicezrzhao.github.io/), [Tian Ye](https://owen718.github.io/), [Qingyu Shi](https://github.com/Shi-qingyu), [Donghao Zhou](https://correr-zhou.github.io/), [Wenhao Chai](https://wenhaochai.com/), [Xin Lin](https://linxin0.github.io/), [Jianzong Wu](https://jianzongwu.github.io/), [**Chao Tang**](https://tangc03.github.io/), [Shilin Xu](https://scholar.google.com/citations?user=8bBcL9sAAAAJ&hl=en), [Tao Zhang](https://zhang-tao-whu.github.io/), [Haobo Yuan](https://yuanhaobo.me/), [Yikang Zhou](https://zhouyiks.github.io/), [Wei Chow](https://scholar.google.com/citations?user=br7-IGkAAAAJ&hl=zh-CN), [Linfeng Li](https://scholar.google.com/citations?user=noWaiKgAAAAJ&hl=en), [Xiangtai Li](https://lxtgh.github.io/), [Lei Zhu](https://sites.google.com/site/indexlzhu/home?authuser=0), [Lu Qi](http://luqi.info/)
-
-[**Paper**](https://arxiv.org/abs/2504.05979)
-|
-[**Project**](https://github.com/Ephemeral182/Empirical-Study-of-GPT-4o-Image-Gen)
-|
-[**Code**](https://github.com/Ephemeral182/Empirical-Study-of-GPT-4o-Image-Gen)
-
-- This study benchmarks GPT-4o's image generation against leading models, revealing key strengths and limitations in its multimodal capabilities.
-
-</div>
-</div>
-
-<!-- AADNet -->
-<div style="display:none">
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE SMC2025</div><img src='images/papers/AADNet.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[AADNet: A Human-Mind-Inspired Multi-Modal Framework for Object Concept Learning](https://ieeexplore.ieee.org/document/11343434)
-  
-[**Chao Tang**](https://tangc03.github.io/)\*, [Xinhai Chang](https://chang-xinhai.github.io/)\*
-
-[**Paper**](https://ieeexplore.ieee.org/document/11343434)
-
-</div>
-</div>
-</div>
-
-<!-- StyleCraft -->
-<div style="display:none">
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC2025 Oral</div><img src='images/papers/StyleCraft.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[StyleCraft: High-Quality Arbitrary Style Transfer via Unified Content-Style Fusion](https://doi.org/10.1007/978-981-96-9866-0_20)
-  
-[**Chao Tang**](https://tangc03.github.io/), [Xinhai Chang](https://chang-xinhai.github.io/)
-
-[**Paper**](https://doi.org/10.1007/978-981-96-9866-0_20)
-
-</div>
-</div>
-</div>
-
-# Honors and Awards
-- *2025* Zhi Class Scholarship 
-- *2024* Zhi Class Scholarship 
-- *2022* Peking University Freshman Scholarship 
-- *2022* Outstanding Graduate Award of Shenzhen Middle School
-- *2020, 2021* First Prize in Chinese Physics Olympiad (CPhO), Guangdong Province
-
-# Experiences
 <div class="experience-list">
   <article class="experience-card">
-    <a class="experience-media" href="https://www.pku.edu.cn/" target="_blank" rel="noopener" aria-label="Peking University">
-      <img src="images/experience/pku.webp" alt="Peking University logo" decoding="async">
+    <a class="experience-media" href="https://sist.pku.edu.cn/" target="_blank" rel="noopener" aria-label="School of Intelligence Science and Technology">
+      <img src="images/experience/pku.webp" alt="Peking University logo">
     </a>
     <div class="experience-body">
-      <h3 class="experience-title"><strong><a href="https://www.pku.edu.cn/" target="_blank" rel="noopener">Peking University</a></strong>, China</h3>
-      <p class="experience-meta">Sep 2022 - Present</p>
-      <p class="experience-role">Undergraduate Student, Intelligence Science and Technology</p>
+      <h3 class="experience-title"><strong><a href="https://sist.pku.edu.cn/" target="_blank" rel="noopener">School of Intelligence Science and Technology</a></strong>, Peking University, China</h3>
+      <p class="experience-meta">Sep 2026 - Present</p>
+      <p class="experience-role">Ph.D. Student</p>
+      <p class="experience-detail">Advisor: Prof. <a href="https://scholar.google.com/citations?user=T4gqdPkAAAAJ&hl=zh-CN">Yunhai Tong</a></p>
+    </div>
+  </article>
+
+  <article class="experience-card">
+    <a class="experience-media" href="https://yuanpei.pku.edu.cn/en/" target="_blank" rel="noopener" aria-label="Yuanpei College">
+      <img src="images/experience/pku.webp" alt="Peking University logo">
+    </a>
+    <div class="experience-body">
+      <h3 class="experience-title"><strong><a href="https://yuanpei.pku.edu.cn/en/" target="_blank" rel="noopener">Yuanpei College</a></strong>, Peking University, China</h3>
+      <p class="experience-meta">Sep 2022 - Jul 2026</p>
+      <p class="experience-role">B.S. in Intelligence Science and Technology</p>
     </div>
   </article>
 
   <article class="experience-card">
     <a class="experience-media" href="https://zhi-class.ai/" target="_blank" rel="noopener" aria-label="Zhi Class">
-      <img src="images/experience/zhi-class.png" alt="Zhi Class logo" decoding="async">
+      <img src="images/experience/zhi-class.png" alt="Zhi Class logo">
     </a>
     <div class="experience-body">
       <h3 class="experience-title"><strong><a href="https://zhi-class.ai/" target="_blank" rel="noopener">Zhi Class</a></strong>, School of EECS, Peking University, China</h3>
-      <p class="experience-meta">Sep 2022 - Present</p>
-      <p class="experience-role">Undergraduate Student, Intelligence Science and Technology</p>
+      <p class="experience-meta">Sep 2022 - Jul 2026</p>
+      <p class="experience-role">Undergraduate Student</p>
     </div>
   </article>
 
   <article class="experience-card">
     <a class="experience-media" href="https://msalab-pku.github.io/" target="_blank" rel="noopener" aria-label="MSA Lab">
-      <img src="images/experience/msa-lab.png" alt="MSA Lab logo" decoding="async">
+      <img src="images/experience/msa-lab.png" alt="MSA Lab logo">
     </a>
     <div class="experience-body">
       <h3 class="experience-title"><strong><a href="https://msalab-pku.github.io/" target="_blank" rel="noopener">MSA Lab</a></strong>, Peking University, China</h3>
@@ -164,6 +90,37 @@ My research interests include multi-modal learning and visual generative methods
   </article>
 </div>
 
-# Services
-- Reviewer: DeLTa@ICLR'26, DeLTa@ICLR'25, FM-Wild@ICLR'25, IJCNN'25, CogSci'25, PRCV2025
-<!-- - Reviewer: DeLTa@ICLR'2025, FM-Wild@ICLR'2025, IJCNN'2025, CogSci'2025, ACL-SRW(Student Research Workshop)'2025, ICONIP'2025, PRCV2025 -->
+## Services
+
+<p class="section-note">Reviewer for the following venues:</p>
+
+<ul class="service-list">
+  <li class="service-item">
+    <span class="service-role">[Workshops]</span>
+    <span class="service-description">FoGen@ICML 2026, DeLTa@ICLR 2026, DeLTa@ICLR 2025, FM-Wild@ICLR 2025</span>
+  </li>
+  <li class="service-item">
+    <span class="service-role">[Main Conference]</span>
+    <span class="service-description">ACL ARR 2026 October, IJCNN 2025, CogSci 2025, PRCV 2025</span>
+  </li>
+</ul>
+
+## Visitors
+
+<div class="homepage-visitors">
+  <div class="homepage-visitors__count">
+    <span id="busuanzi_container_site_uv" aria-live="polite">Total visitors: <span id="busuanzi_value_site_uv">—</span></span>
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  </div>
+  <div class="homepage-visitors__map">
+    <a class="visitor-map-fallback" href="https://whos.amung.us/stats/hxrxnj0uxt/" target="_blank" rel="noopener noreferrer"><img src="https://widgets.amung.us/mapbacks/classic.jpg" alt="World map" width="420" height="210"></a>
+    <script id="_wauc3t">
+      var _wau = _wau || [];
+      var visitorMapWidth = Math.floor(Math.min(420, document.currentScript.parentElement.clientWidth));
+      _wau.push(["map", "hxrxnj0uxt", "c3t", visitorMapWidth, Math.round(visitorMapWidth / 2), "classic", "default-blue"]);
+    </script>
+    <script async src="https://waust.at/m.js"></script>
+  </div>
+  <p class="homepage-visitors__note">Tracking enabled Nov 2026 · <a href="https://whos.amung.us/stats/hxrxnj0uxt/" target="_blank" rel="noopener noreferrer">Live visitor map</a></p>
+  <noscript><p><a href="https://whos.amung.us/stats/hxrxnj0uxt/">View visitor map</a></p></noscript>
+</div>

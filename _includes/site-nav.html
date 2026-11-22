@@ -1,16 +1,27 @@
-<nav class="home-nav" aria-label="Primary navigation">
-  <div class="home-nav__inner">
-    <a class="home-nav__brand" href="{{ '/' | relative_url }}" target="_self" aria-label="{{ site.title }} home">
-      <span class="home-nav__mark"><img src="{{ site.author.avatar | relative_url }}" alt=""></span>
-      <span class="home-nav__name">Chao Tang</span>
-    </a>
-    <div class="home-nav__links">
-      <a href="#about-me" target="_self">About</a>
-      <a href="#news" target="_self">News</a>
-      <a href="#publications" target="_self">Publications</a>
-      <a href="#experiences" target="_self">Experiences</a>
-      <a href="#honors-and-awards" target="_self">Awards</a>
-      <a href="#services" target="_self">Services</a>
+{% assign is_zh = false %}
+{% if page.lang == 'zh' %}{% assign is_zh = true %}{% endif %}
+{% assign author_name_parts = site.author.name | split: "|" %}
+{% assign brand_name = author_name_parts[0] | strip %}
+{% if is_zh %}{% assign brand_name = author_name_parts[1] | strip %}{% endif %}
+
+<nav class="site-topbar" aria-label="Primary">
+  <div class="site-topbar__inner">
+    <div class="site-topbar__brand-group">
+      <a class="site-topbar__brand" href="#top" target="_self" aria-label="{{ site.title }} home">
+        <span class="site-topbar__mark"><img src="{{ site.author.avatar | relative_url }}" alt=""></span>
+        <span class="site-topbar__name">{{ brand_name }}</span>
+      </a>
+      <div class="site-topbar__lang" role="group" aria-label="Language">
+        <a class="lang-tag{% unless is_zh %} is-active{% endunless %}" href="{{ '/' | relative_url }}" target="_self" hreflang="en" lang="en">En</a>
+        <a class="lang-tag{% if is_zh %} is-active{% endif %}" href="{{ '/zh/' | relative_url }}" target="_self" hreflang="zh" lang="zh">中文</a>
+      </div>
+    </div>
+    <div class="site-topbar__links">
+      {% for link in site.data.navigation.main %}
+        {% assign link_title = link.title %}
+        {% if is_zh and link.title_zh %}{% assign link_title = link.title_zh %}{% endif %}
+        <a href="{{ link.url }}" target="_self">{{ link_title }}</a>
+      {% endfor %}
     </div>
   </div>
 </nav>

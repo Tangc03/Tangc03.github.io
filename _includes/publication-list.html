@@ -1,0 +1,91 @@
+{% assign is_zh = false %}
+{% if page.lang == 'zh' %}{% assign is_zh = true %}{% endif %}
+{% if is_zh %}
+  {% assign topic_labels = "multimodal:多模态学习|generation:视觉生成" | split: "|" %}
+  {% assign label_select = "精选列表" %}
+  {% assign label_full = "完整列表" %}
+  {% assign label_all_topics = "全部方向" %}
+  {% assign label_empty = "当前筛选下暂无论文。" %}
+{% else %}
+  {% assign topic_labels = "multimodal:Multimodal Learning|generation:Visual Generation" | split: "|" %}
+  {% assign label_select = "Select List" %}
+  {% assign label_full = "Full List" %}
+  {% assign label_all_topics = "All Topics" %}
+  {% assign label_empty = "No publications match this filter yet." %}
+{% endif %}
+
+<div class="publication-controls" data-publication-controls hidden>
+  <div class="publication-controls__row">
+    <div class="publication-view-switch" role="group" aria-label="Publication view">
+      <button type="button" class="publication-view-button" data-publication-view="selected" aria-pressed="true" aria-controls="publication-list">{{ label_select }}</button>
+      <button type="button" class="publication-view-button" data-publication-view="full" aria-pressed="false" aria-controls="publication-list">{{ label_full }}</button>
+    </div>
+    <span class="publication-count" data-publication-count role="status" aria-live="polite" aria-atomic="true"></span>
+  </div>
+  <div class="filter-group filter-group--topic" aria-label="Filter by topic">
+    <button class="publication-filter is-active" type="button" data-topic-filter="all" aria-pressed="true">{{ label_all_topics }}</button>
+    {% for topic_pair in topic_labels %}
+      {% assign topic_parts = topic_pair | split: ":" %}
+      <button class="publication-filter" type="button" data-topic-filter="{{ topic_parts[0] }}" aria-pressed="false">{{ topic_parts[1] }}</button>
+    {% endfor %}
+  </div>
+</div>
+
+<div id="publication-list" class="publications" data-publication-list data-view="selected">
+  <ol class="bibliography">
+    {% for paper in site.data.publications %}
+      <li class="publication-item{% if paper.selected %} is-selected{% endif %}" data-topic="{{ paper.categories | join: ' ' }}" data-selected="{{ paper.selected }}" data-title="{{ paper.title }}"{% if paper.scholar_id %} data-scholar-id="{{ paper.scholar_id }}"{% endif %}>
+        <article class="publication-card">
+          <div class="publication-media-wrap">
+            {% if paper.badge %}<span class="publication-badge">{{ paper.badge }}</span>{% endif %}
+            <img class="publication-teaser" src="{{ paper.image | relative_url }}" alt="Teaser for {{ paper.title }}">
+          </div>
+          <div class="publication-body">
+            <h3 class="publication-title">
+              {% assign primary_link = paper.links | first %}
+              {% if primary_link %}<a href="{{ primary_link.url }}" target="_blank" rel="noopener">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}
+            </h3>
+            <p class="publication-authors">{{ paper.authors_html }}</p>
+            {% if is_zh and paper.intro_zh %}
+              <p class="publication-intro">{{ paper.intro_zh }}</p>
+            {% else %}
+              <p class="publication-intro">{{ paper.intro }}</p>
+            {% endif %}
+            <div class="publication-meta-row">
+              <span class="publication-venue">{{ paper.venue }}</span>
+              {% if paper.recognition %}<span class="publication-recognition">{{ paper.recognition }}</span>{% endif %}
+              {% if paper.contribution %}
+                <span class="contribution-tag">
+                  {% if is_zh %}
+                    {% if paper.contribution == "co-first" %}共同一作{% elsif paper.contribution == "first" %}一作{% elsif paper.contribution == "core" %}核心贡献{% elsif paper.contribution == "collaborator" %}合作者{% else %}{{ paper.contribution }}{% endif %}
+                  {% else %}
+                    {% if paper.contribution == "co-first" %}Co-first Author{% elsif paper.contribution == "first" %}First Author{% elsif paper.contribution == "core" %}Core Contributor{% elsif paper.contribution == "collaborator" %}Collaborator{% else %}{{ paper.contribution }}{% endif %}
+                  {% endif %}
+                </span>
+              {% endif %}
+              {% for cat in paper.categories %}
+                {% assign topic_label = cat %}
+                {% for topic_pair in topic_labels %}
+                  {% assign topic_parts = topic_pair | split: ":" %}
+                  {% if topic_parts[0] == cat %}{% assign topic_label = topic_parts[1] %}{% endif %}
+                {% endfor %}
+                <span class="topic-tag">{{ topic_label }}</span>
+              {% endfor %}
+            </div>
+            {% if paper.links or paper.stars_repo %}
+              <div class="publication-links">
+                {% for link in paper.links %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+                {% endfor %}
+                {% if paper.stars_repo %}
+                  <a class="stars-pill" data-stars-repo="{{ paper.stars_repo }}" href="https://github.com/{{ paper.stars_repo }}" target="_blank" rel="noopener" aria-label="GitHub stars">Stars</a>
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+        </article>
+      </li>
+    {% endfor %}
+  </ol>
+  <p class="publication-empty" hidden>{{ label_empty }}</p>
+</div>

@@ -4,6 +4,11 @@
 {% assign author_name_parts = author.name | split: "|" %}
 {% assign profile_name = author_name_parts[0] | strip %}
 {% assign profile_bio = author_name_parts[1] | default: author.bio | strip %}
+{% if page.lang == 'zh' %}
+  {% assign profile_swap = profile_name %}
+  {% assign profile_name = profile_bio %}
+  {% assign profile_bio = profile_swap %}
+{% endif %}
 
 <div itemscope itemtype="http://schema.org/Person" class="profile-card">
   <a class="profile-avatar" href="{{ '/' | relative_url }}" target="_self" aria-label="{{ profile_name }} homepage">
@@ -36,4 +41,21 @@
       <a href="{{ author.uri }}" target="_blank" rel="noopener" aria-label="Website"><i class="fas fa-link"></i></a>
     {% endif %}
   </nav>
+
+  {% if author.googlescholar %}
+  <div class="scholar-stats" data-scholar-stats hidden>
+    <a class="scholar-mark" href="{{ author.googlescholar }}" target="_blank" rel="noopener" aria-label="Google Scholar profile">
+      <i class="ai ai-google-scholar"></i>
+    </a>
+    <div class="stat-item">
+      <span class="stat-number" data-scholar-citations>--</span>
+      <span class="stat-label">Citations</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-scholar-hindex>--</span>
+      <span class="stat-label">H-index</span>
+    </div>
+    <p class="stats-updated">Updated <span data-scholar-updated>when available</span></p>
+  </div>
+  {% endif %}
 </div>

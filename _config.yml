@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Chao Tang | 唐超"
-description              : "Yuanpei College, Zhi Class"
+description              : "Ph.D. student, School of Intelligence Science and Technology, Peking University"
 repository               : "Tangc03/Tangc03.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -27,7 +27,7 @@ author:
   location         : "Beijing, China"
   employer         :
   pubmed           : 
-  googlescholar    : https://scholar.google.com/citations?user=SCHOLAR_ID&user=KpVFMqYAAAAJ
+  googlescholar    : https://scholar.google.com/citations?user=KpVFMqYAAAAJ
   email            : "tc_2003@stu.pku.edu.cn"
   researchgate     : https://www.researchgate.net/profile/Chao-Tang-69
   uri              :
