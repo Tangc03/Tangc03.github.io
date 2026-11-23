@@ -23,12 +23,18 @@ jobs:
         run: pip install -r google_scholar_crawler/requirements.txt
 
       - name: Crawl Google Scholar stats
-        timeout-minutes: 8
+        id: crawl
+        # Google Scholar blocks GitHub-hosted runner IPs; a blocked crawl must
+        # not fail the run (it would email a failure every schedule). Keep the
+        # previous snapshot instead and surface a warning below.
+        continue-on-error: true
+        timeout-minutes: 6
         env:
           GOOGLE_SCHOLAR_ID: KpVFMqYAAAAJ
         run: python google_scholar_crawler/main.py
 
       - name: Publish to google-scholar-stats branch
+        if: steps.crawl.outcome == 'success'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -42,3 +48,8 @@ jobs:
           fi
           CM=$(git commit-tree "$TR" $PARENT -m "Update Google Scholar stats")
           git push origin "$CM:refs/heads/google-scholar-stats" --force
+
+      - name: Note blocked crawl
+        if: steps.crawl.outcome != 'success'
+        run: |
+          echo "::warning title=Scholar crawl blocked::Google Scholar blocks GitHub-hosted runner IPs; kept the previous stats snapshot. For a guaranteed refresh run: python google_scholar_crawler/local_update.py"
