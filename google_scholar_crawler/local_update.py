@@ -32,7 +32,9 @@ git('fetch', 'origin', 'google-scholar-stats', '--depth', '1', check=False)
 b1 = git('hash-object', '-w', 'results/gs_data.json')
 b2 = git('hash-object', '-w', 'results/gs_data_shieldsio.json')
 tree_in = f'100644 blob {b1}\tgs_data.json\n100644 blob {b2}\tgs_data_shieldsio.json\n'
-tr = subprocess.run(['git', 'mktree'], input=tree_in, check=True, capture_output=True, text=True).stdout.strip()
+# Bytes input: text mode on Windows would turn \n into \r\n and corrupt filenames.
+tr = subprocess.run(['git', 'mktree'], input=tree_in.encode('utf-8'), check=True,
+                    capture_output=True).stdout.decode('utf-8').strip()
 
 parent = []
 if subprocess.run(['git', 'cat-file', '-e', 'refs/remotes/origin/google-scholar-stats^{commit}'],
